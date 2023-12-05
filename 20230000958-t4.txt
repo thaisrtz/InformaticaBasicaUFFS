@@ -1,0 +1,63 @@
+139-162-5-218 login: thaisrtz                                                         
+Password:                                                                             
+              ##############################################                          
+              # webminal.org => your linux  ~ on the cloud #                          
+              ##############################################                                                                                      
+-sh-4.2$ ls                                                                           
+-sh-4.2$ mkdir uffs                                                                   
+-sh-4.2$ cd uffs                                                                      
+-sh-4.2$ mkdir trabalhos                                                              
+-sh-4.2$ mkdir textos                                                                 
+-sh-4.2$ ls                                                                           
+textos  trabalhos
+-sh-4.2$ touch teste.txt                                                              
+-sh-4.2$ nano teste.txt                                                               
+-sh-4.2$ cp teste.txt teste1.txt                                                      
+-sh-4.2$ cp teste.txt teste.asc                                                       
+-sh-4.2$ ls                                                                           
+teste1.txt  teste.asc  teste.txt  textos  trabalhos                                      
+-sh-4.2$ cd ..                                                                        
+-sh-4.2$ ls                                                                           
+uffs                                   
+-sh-4.2$ cd uffs                                                                      
+-sh-4.2$ cp *.txt trabalhos                                                           
+-sh-4.2$ ls                                                                           
+teste1.txt  teste.asc  teste.txt  textos  trabalhos
+-sh-4.2$ cd trabalhos                                                                 
+-sh-4.2$ ls                                                                           
+teste1.txt  teste.txt                                                                 
+-sh-4.2$ d ..                                                                         
+-sh-4.2$ cd ..                                                                        
+-sh-4.2$ ls                                                                           
+uffs
+-sh-4.2$ cd uffs                                                                      
+-sh-4.2$ mv teste.asc textos                                                          
+-sh-4.2$ ls -l textos                                                                 
+total 4                                                                               
+-rw-rw-r--. 1 thaisrtz thaisrtz 50 Dec  4 01:58 teste.asc                             
+-sh-4.2$ chmod u=rw, g=rw, o=r teste.txt                                              
+chmod: invalid mode: ‘u=rw,’                                                                                                       
+-sh-4.2$chmod g=r teste1.txt                                                          
+-sh-4.2$ cd ..                                                                        
+-sh-4.2$ ls                                                                           
+uffs
+-sh-4.2$ mkdir uffs_backup                                                            
+-sh-4.2$ cp -r uffs uffs_backup                                                       
+-sh-4.2$ cd uffs                                                                      
+-sh-4.2$ cp textos/teste.asc trabalhos                                                
+-sh-4.2$ rmdir textos                                                                 
+rmdir: failed to remove ‘textos’: Directory not empty                                 
+-sh-4.2$ cd textos                                                                                                   
+-sh-4.2$ rm teste.asc                                                                 
+-sh-4.2$ cd ..                                                                        
+-sh-4.2$ rmdir textos                                                                 
+-sh-4.2$ ls                                                                           
+teste1.txt  teste.txt  trabalhos
+-sh-4.2$ cd trabalhos                                                                 
+-sh-4.2$ mv teste.asc outro_texto.txt                                                 
+-sh-4.2$ cat outro_texto.txt                                                          
+20230000958                                                                           
+Thais Regina Tedesco Zanella                                                          
+Xanxerê                                                                               
+-sh-4.2$ grep "Thais" outro_texto.txt                                                 
+Thais Regina Tedesco Zanella
